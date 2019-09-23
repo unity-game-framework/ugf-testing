@@ -4,13 +4,13 @@ UGF.Testing
 
 ## Info
 
-- **Version**: `0.0.0-preview`
+- **Version**: `0.1.0-preview`
 - **Unity Version**: `2019.2.0`
 - **Api Compatibility Level**: `.NET Standard 2.0`
 
 ### Dependencies
 
-- N/A
+- [com.unity.test-framework](https://bintray.com/unity/unity/com.unity.test-framework): `1.1.3`
 
 ### Changelog
 
@@ -19,7 +19,7 @@ UGF.Testing
 ### Registries
 
 - [Stable][2] (N/A)
-- [Develop][3] (N/A)
+- [Develop][3]
 
 ## Description
 
