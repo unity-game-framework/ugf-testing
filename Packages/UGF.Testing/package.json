@@ -3,7 +3,7 @@
     "displayName": "UGF.Testing",
     "version": "0.0.0-preview",
     "unity": "2019.2",
-    "description": "No description.",
+    "description": "Provides utilities for testing with Unity Test Runner.",
     "author": {
         "name": "Unity Game Framework",
         "url": "https://github.com/unity-game-framework"
