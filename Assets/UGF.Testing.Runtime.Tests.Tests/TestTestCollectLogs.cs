@@ -1,3 +1,4 @@
+using System.Linq;
 using NUnit.Framework;
 using UnityEngine;
 
@@ -11,7 +12,7 @@ namespace UGF.Testing.Runtime.Tests.Tests
             Debug.Log("Collect1()");
 
             Assert.AreEqual(1, Logs.Count);
-            Assert.True(Logs.Exists(x => x.Condition == "Collect1()"));
+            Assert.True(Logs.Any(x => x.Condition == "Collect1()"));
         }
 
         [Test]
@@ -20,7 +21,7 @@ namespace UGF.Testing.Runtime.Tests.Tests
             Debug.Log("Collect2()");
 
             Assert.AreEqual(1, Logs.Count);
-            Assert.True(Logs.Exists(x => x.Condition == "Collect2()"));
+            Assert.True(Logs.Any(x => x.Condition == "Collect2()"));
         }
     }
 }
