@@ -23,7 +23,7 @@ UGF.Testing
 
 ## Description
 
-No description.
+Provides utilities for testing with Unity Test Runner.
 
 ## How to Install
 
