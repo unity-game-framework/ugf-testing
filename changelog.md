@@ -26,6 +26,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Security
 - Nothing.
 
+## 0.1.1-preview - 2019-09-23
+- [Commits](https://github.com/unity-game-framework/ugf-testing/compare/0.1.0-preview...0.1.1-preview)
+- [Milestone](https://github.com/unity-game-framework/ugf-testing/milestone/2?closed=1)
+
+### Fixed
+- `UGF.Testing.Runtime.Tests` assembly definition to be available as reference.
+
 ## 0.1.0-preview - 2019-09-23
 - [Commits](https://github.com/unity-game-framework/ugf-testing/compare/ec13da6...0.1.0-preview)
 - [Milestone](https://github.com/unity-game-framework/ugf-testing/milestone/1?closed=1)
