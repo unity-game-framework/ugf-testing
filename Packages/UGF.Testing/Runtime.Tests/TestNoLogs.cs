@@ -5,14 +5,14 @@ namespace UGF.Testing.Runtime.Tests
 {
     public abstract class TestNoLogs
     {
-        [SetUp]
-        public virtual void Setup()
+        [OneTimeSetUp]
+        public virtual void SetupAll()
         {
             Debug.unityLogger.logEnabled = false;
         }
 
-        [TearDown]
-        public virtual void TearDown()
+        [OneTimeTearDown]
+        public virtual void TeardownAll()
         {
             Debug.unityLogger.logEnabled = true;
         }

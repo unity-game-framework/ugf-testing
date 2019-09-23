@@ -2,10 +2,8 @@ using UnityEngine;
 
 namespace UGF.Testing.Runtime.Tests
 {
-    public class TestComponentScope<T> : TestObjectScope where T : Component
+    public class TestComponentScope<T> : TestObjectScope<T> where T : Component
     {
-        public T Component { get { return (T)Target; } }
-
         public TestComponentScope() : base(new GameObject(typeof(T).Name).AddComponent<T>())
         {
         }
@@ -16,7 +14,7 @@ namespace UGF.Testing.Runtime.Tests
 
         public override void Dispose()
         {
-            Object.DestroyImmediate(Component.gameObject);
+            Object.DestroyImmediate(Target.gameObject);
         }
     }
 }

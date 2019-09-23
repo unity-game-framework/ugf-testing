@@ -3,11 +3,11 @@ using Object = UnityEngine.Object;
 
 namespace UGF.Testing.Runtime.Tests
 {
-    public class TestObjectScope : IDisposable
+    public class TestObjectScope<T> : IDisposable where T : Object
     {
-        public Object Target { get; }
+        public T Target { get; }
 
-        public TestObjectScope(Object target)
+        public TestObjectScope(T target)
         {
             Target = target ? target : throw new ArgumentNullException(nameof(target));
         }

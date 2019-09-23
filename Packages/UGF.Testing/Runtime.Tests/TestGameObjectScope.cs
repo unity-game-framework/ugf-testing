@@ -3,9 +3,11 @@ using UnityEngine;
 
 namespace UGF.Testing.Runtime.Tests
 {
-    public class TestGameObjectScope : TestObjectScope
+    public class TestGameObjectScope : TestObjectScope<GameObject>
     {
-        public GameObject GameObject { get { return (GameObject)Target; } }
+        public TestGameObjectScope() : base(new GameObject())
+        {
+        }
 
         public TestGameObjectScope(string name) : base(new GameObject(name))
         {
