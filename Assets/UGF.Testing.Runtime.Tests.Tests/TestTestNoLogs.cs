@@ -21,8 +21,7 @@ namespace UGF.Testing.Runtime.Tests.Tests
             Application.logMessageReceived -= OnApplicationLogMessageReceived;
         }
 
-        [TearDown]
-        public void Teardown()
+        public override void Teardown()
         {
             m_logReceived = false;
         }
