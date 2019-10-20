@@ -1,4 +1,3 @@
-using NUnit.Framework;
 using UnityEngine;
 
 namespace UGF.Testing.Runtime.Tests
@@ -6,16 +5,14 @@ namespace UGF.Testing.Runtime.Tests
     /// <summary>
     /// Represents test without any 'Debug.unityLogger' logs.
     /// </summary>
-    public abstract class TestNoLogs
+    public abstract class TestNoLogs : TestBase
     {
-        [OneTimeSetUp]
-        public virtual void SetupAll()
+        public override void SetupAll()
         {
             Debug.unityLogger.logEnabled = false;
         }
 
-        [OneTimeTearDown]
-        public virtual void TeardownAll()
+        public override void TeardownAll()
         {
             Debug.unityLogger.logEnabled = true;
         }
