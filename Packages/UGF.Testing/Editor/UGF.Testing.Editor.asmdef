@@ -1,0 +1,25 @@
+{
+    "name": "UGF.Testing.Editor",
+    "rootNamespace": "UGF.Testing.Editor",
+    "references": [
+        "GUID:caf53a88a5f705b469991beeab5f32d0",
+        "GUID:ff62901452104d14cae29322ac133c05",
+        "GUID:4806a292f99efd44aba38aea20847e17",
+        "GUID:a0dc2e2425360fc479b77a028f0e9225",
+        "GUID:16fde9420ef50f34db61e711e19381dd",
+        "GUID:abdd615e45137c74ca2ce9c636c78c15",
+        "GUID:27619889b8ba8c24980f49ee34dbb44a",
+        "GUID:0acc523941302664db1f4e527237feb3"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
