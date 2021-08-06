@@ -1,7 +1,8 @@
 using NUnit.Framework;
+using UGF.Testing.Runtime.Scopes;
 using UnityEngine;
 
-namespace UGF.Testing.Runtime.Tests.Tests
+namespace UGF.Testing.Runtime.Tests.Scopes
 {
     public class TestTestGameObjectScope
     {

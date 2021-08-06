@@ -1,12 +1,12 @@
 using System;
 using UnityEngine;
 
-namespace UGF.Testing.Runtime.Tests
+namespace UGF.Testing.Runtime.Scopes
 {
     /// <summary>
     /// Represents the scope to control 'Debug.unityLogger'.
     /// </summary>
-    public struct TestLogScope : IDisposable
+    public readonly struct TestLogEnableScope : IDisposable
     {
         private readonly bool m_enabled;
 
@@ -14,7 +14,7 @@ namespace UGF.Testing.Runtime.Tests
         /// Creates test log scope.
         /// </summary>
         /// <param name="enabled">The value that determines whether to enable 'Debug.unityLogger'.</param>
-        public TestLogScope(bool enabled)
+        public TestLogEnableScope(bool enabled)
         {
             m_enabled = Debug.unityLogger.logEnabled;
 

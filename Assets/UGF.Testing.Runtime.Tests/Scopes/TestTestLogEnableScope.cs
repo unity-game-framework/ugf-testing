@@ -1,9 +1,10 @@
 using NUnit.Framework;
+using UGF.Testing.Runtime.Scopes;
 using UnityEngine;
 
-namespace UGF.Testing.Runtime.Tests.Tests
+namespace UGF.Testing.Runtime.Tests.Scopes
 {
-    public class TestTestLogScope
+    public class TestTestLogEnableScope
     {
         private bool m_logReceived;
 
@@ -41,7 +42,7 @@ namespace UGF.Testing.Runtime.Tests.Tests
         [Test]
         public void Enabled()
         {
-            using (new TestLogScope(true))
+            using (new TestLogEnableScope(true))
             {
                 Debug.Log("Enabled()");
             }
@@ -52,7 +53,7 @@ namespace UGF.Testing.Runtime.Tests.Tests
         [Test]
         public void Disabled()
         {
-            using (new TestLogScope(false))
+            using (new TestLogEnableScope(false))
             {
                 Debug.Log("Disabled()");
             }

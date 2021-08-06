@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace UGF.Testing.Runtime.Tests
+namespace UGF.Testing.Runtime.Scopes
 {
     /// <summary>
     /// Represents a scriptableObject scope.

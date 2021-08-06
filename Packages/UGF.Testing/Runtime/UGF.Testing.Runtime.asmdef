@@ -1,5 +1,6 @@
 {
-    "name": "UGF.Testing.Runtime.Tests",
+    "name": "UGF.Testing.Runtime",
+    "rootNamespace": "UGF.Testing.Runtime",
     "references": [
         "GUID:27619889b8ba8c24980f49ee34dbb44a"
     ],
@@ -11,6 +12,9 @@
         "nunit.framework.dll"
     ],
     "autoReferenced": true,
-    "defineConstraints": [],
-    "versionDefines": []
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
 }
