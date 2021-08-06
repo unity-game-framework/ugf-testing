@@ -18,4 +18,6 @@ MonoBehaviour:
   m_assetBundleOptions: 0
   m_assetBundleOutputDirectory: 1
   m_assetBundleOutputPath: Testing
-  m_folders: []
+  m_folders:
+  - Assets/UGF.Testing.Runtime.Tests/TestResources/Folder0
+  - Assets/UGF.Testing.Runtime.Tests/TestResources/Folder1
