@@ -62,10 +62,13 @@ namespace UGF.Testing.Editor.Editor.TestResources
                     }
                 }
 
-                if (GUILayout.Button("Build", GUILayout.Width(75F)))
+                using (new EditorGUI.DisabledScope(m_listFolders.SerializedProperty.arraySize == 0))
                 {
-                    TestResourcesEditorUtility.BuildAssetBundle();
-                    AssetDatabase.Refresh();
+                    if (GUILayout.Button("Build", GUILayout.Width(75F)))
+                    {
+                        TestResourcesEditorUtility.BuildAssetBundle();
+                        AssetDatabase.Refresh();
+                    }
                 }
 
                 EditorGUILayout.Space();
