@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1181af8b76ce6ad499d843bf0c8ffd47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_buildOnTestsPlayerBuild: 1
-  m_clearAfterTestsPlayerBuild: 1
+  m_buildBeforeTestRun: 1
+  m_clearAfterTestRun: 1
   m_assetBundleName: TestResources
   m_assetBundleOptions: 0
   m_assetBundleOutputDirectory: 1

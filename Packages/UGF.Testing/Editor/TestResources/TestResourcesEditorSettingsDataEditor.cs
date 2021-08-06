@@ -7,8 +7,8 @@ namespace UGF.Testing.Editor.Editor.TestResources
     [CustomEditor(typeof(TestResourcesEditorSettingsData), true)]
     internal class TestResourcesEditorSettingsDataEditor : UnityEditor.Editor
     {
-        private SerializedProperty m_propertyBuildOnTestsPlayerBuild;
-        private SerializedProperty m_propertyClearAfterTestsPlayerBuild;
+        private SerializedProperty m_propertyBuildBeforeTestRun;
+        private SerializedProperty m_propertyClearAfterTestRun;
         private SerializedProperty m_propertyAssetBundleName;
         private SerializedProperty m_propertyAssetBundleOptions;
         private SerializedProperty m_propertyAssetBundleOutputDirectory;
@@ -17,8 +17,8 @@ namespace UGF.Testing.Editor.Editor.TestResources
 
         private void OnEnable()
         {
-            m_propertyBuildOnTestsPlayerBuild = serializedObject.FindProperty("m_buildOnTestsPlayerBuild");
-            m_propertyClearAfterTestsPlayerBuild = serializedObject.FindProperty("m_clearAfterTestsPlayerBuild");
+            m_propertyBuildBeforeTestRun = serializedObject.FindProperty("m_buildBeforeTestRun");
+            m_propertyClearAfterTestRun = serializedObject.FindProperty("m_clearAfterTestRun");
             m_propertyAssetBundleName = serializedObject.FindProperty("m_assetBundleName");
             m_propertyAssetBundleOptions = serializedObject.FindProperty("m_assetBundleOptions");
             m_propertyAssetBundleOutputDirectory = serializedObject.FindProperty("m_assetBundleOutputDirectory");
@@ -37,8 +37,8 @@ namespace UGF.Testing.Editor.Editor.TestResources
         {
             using (new SerializedObjectUpdateScope(serializedObject))
             {
-                EditorGUILayout.PropertyField(m_propertyBuildOnTestsPlayerBuild);
-                EditorGUILayout.PropertyField(m_propertyClearAfterTestsPlayerBuild);
+                EditorGUILayout.PropertyField(m_propertyBuildBeforeTestRun);
+                EditorGUILayout.PropertyField(m_propertyClearAfterTestRun);
                 EditorGUILayout.PropertyField(m_propertyAssetBundleName);
                 EditorGUILayout.PropertyField(m_propertyAssetBundleOptions);
                 EditorGUILayout.PropertyField(m_propertyAssetBundleOutputDirectory);

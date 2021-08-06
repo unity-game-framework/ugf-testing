@@ -13,7 +13,7 @@ namespace UGF.Testing.Editor.Editor.TestResources
         {
             TestResourcesEditorSettingsData settings = TestResourcesEditorSettings.Settings.GetData();
 
-            if (settings.ClearAfterTestsPlayerBuild)
+            if (settings.ClearAfterTestRun)
             {
                 TestResourcesEditorUtility.ClearAssetBundle();
             }
