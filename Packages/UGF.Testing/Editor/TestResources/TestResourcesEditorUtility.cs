@@ -20,6 +20,8 @@ namespace UGF.Testing.Editor.Editor.TestResources
             AssetBundleBuildInfo build = GetAssetBundleBuildInfo(settings.AssetBundleName, settings.Folders);
             string outputPath = TestResourcesEditorSettings.GetAssetBundleOutputPath();
 
+            Directory.CreateDirectory(outputPath);
+
             return AssetBundleBuildUtility.Build(new[] { build }, outputPath, buildTarget, settings.AssetBundleOptions);
         }
 
