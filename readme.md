@@ -4,13 +4,15 @@ UGF.Testing
 
 ## Info
 
-- **Version**: `0.2.0-preview`
-- **Unity**: `2019.3`
+- **Version**: `1.0.0-preview`
+- **Unity**: `2021.1`
 - **API Compatibility Level**: `.NET Standard 2.0`
 
 ### Dependencies
 
-- `com.unity.test-framework`: `1.1.3`
+- `com.unity.test-framework`: `1.1.27`
+- `com.ugf.customsettings`: `3.4.1`
+- `com.ugf.assetbundles`: `1.0.0-preview`
 
 
 ### Description
