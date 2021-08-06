@@ -2,6 +2,9 @@
     "name": "UGF.Testing.Runtime",
     "rootNamespace": "UGF.Testing.Runtime",
     "references": [
+        "GUID:9b24bb9684a1ac744ba842cf8de9fc0f",
+        "GUID:ff62901452104d14cae29322ac133c05",
+        "GUID:16fde9420ef50f34db61e711e19381dd",
         "GUID:27619889b8ba8c24980f49ee34dbb44a"
     ],
     "includePlatforms": [],
