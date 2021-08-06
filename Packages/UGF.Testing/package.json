@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git://github.com/unity-game-framework/ugf-testing.git"
   },
-  "changelogUrl": "",
-  "licensesUrl": "",
+  "changelogUrl": "https://github.com/unity-game-framework/ugf-testing/blob/main/changelog.md",
+  "licensesUrl": "https://github.com/unity-game-framework/ugf-testing/blob/main/license",
   "publishConfig": {
     "registry": "https://unitygameframework.jfrog.io/artifactory/api/npm/default"
   },
   "dependencies": {
-      "com.unity.test-framework": "1.1.3"
+    "com.unity.test-framework": "1.1.3"
   }
 }
