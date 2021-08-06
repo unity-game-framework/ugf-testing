@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace UGF.Testing.Runtime.Tests
+namespace UGF.Testing.Runtime.Tests.Scopes
 {
     /// <summary>
     /// Represents a gameObject scope.

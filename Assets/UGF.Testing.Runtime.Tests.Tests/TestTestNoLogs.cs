@@ -7,21 +7,21 @@ namespace UGF.Testing.Runtime.Tests.Tests
     {
         private bool m_logReceived;
 
-        public override void SetupAll()
+        public override void OnSetupAll()
         {
-            base.SetupAll();
+            base.OnSetupAll();
 
             Application.logMessageReceived += OnApplicationLogMessageReceived;
         }
 
-        public override void TeardownAll()
+        public override void OnTeardownAll()
         {
-            base.TeardownAll();
+            base.OnTeardownAll();
 
             Application.logMessageReceived -= OnApplicationLogMessageReceived;
         }
 
-        public override void Teardown()
+        public override void OnTeardown()
         {
             m_logReceived = false;
         }

@@ -1,7 +1,7 @@
 using System;
 using Object = UnityEngine.Object;
 
-namespace UGF.Testing.Runtime.Tests
+namespace UGF.Testing.Runtime.Tests.Scopes
 {
     /// <summary>
     /// Represents a object scope of the specified type.

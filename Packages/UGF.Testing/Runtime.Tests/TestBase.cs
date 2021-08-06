@@ -8,22 +8,22 @@ namespace UGF.Testing.Runtime.Tests
     public abstract class TestBase
     {
         [OneTimeSetUp]
-        public virtual void SetupAll()
+        public virtual void OnSetupAll()
         {
         }
 
         [OneTimeTearDown]
-        public virtual void TeardownAll()
+        public virtual void OnTeardownAll()
         {
         }
 
         [SetUp]
-        public virtual void Setup()
+        public virtual void OnSetup()
         {
         }
 
         [TearDown]
-        public virtual void Teardown()
+        public virtual void OnTeardown()
         {
         }
     }
