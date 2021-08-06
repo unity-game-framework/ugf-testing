@@ -1,9 +1,9 @@
 using NUnit.Framework;
-using UGF.Testing.Runtime.Tests.Scopes;
+using UGF.Testing.Runtime.Scopes;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace UGF.Testing.Runtime.Tests.Tests.Scopes
+namespace UGF.Testing.Runtime.Tests.Scopes
 {
     public class TestTestObjectScope
     {

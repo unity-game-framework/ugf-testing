@@ -1,7 +1,7 @@
 using NUnit.Framework;
 using UnityEngine;
 
-namespace UGF.Testing.Runtime.Tests.Tests
+namespace UGF.Testing.Runtime.Tests
 {
     public class TestTestNoLogs : TestNoLogs
     {

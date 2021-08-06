@@ -1,6 +1,6 @@
 using NUnit.Framework;
 
-namespace UGF.Testing.Runtime.Tests
+namespace UGF.Testing.Runtime
 {
     /// <summary>
     /// Represents base test with default setup and teardown methods.

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace UGF.Testing.Runtime.Tests
+namespace UGF.Testing.Runtime
 {
     /// <summary>
     /// Represents test without any 'Debug.unityLogger' logs.

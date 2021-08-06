@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace UGF.Testing.Runtime.Tests.Scopes
+namespace UGF.Testing.Runtime.Scopes
 {
     /// <summary>
     /// Represents the scope to control 'Debug.unityLogger'.
