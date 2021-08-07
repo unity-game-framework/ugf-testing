@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.0-preview.1](https://github.com/unity-game-framework/ugf-testing/releases/tag/1.0.0-preview.1) - 2021-08-07  
+
+### Release Notes
+
+- [Milestone](https://github.com/unity-game-framework/ugf-testing/milestone/5?closed=1)  
+    
+
+### Removed
+
+- Remove TestBase class ([#12](https://github.com/unity-game-framework/ugf-testing/pull/12))  
+    - Remove `TestBase` and `TestNoLogs ` classes, usage of this classes not possible as imported code from remote package.
+
 ## [1.0.0-preview](https://github.com/unity-game-framework/ugf-testing/releases/tag/1.0.0-preview) - 2021-08-06  
 
 ### Release Notes
