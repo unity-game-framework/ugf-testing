@@ -116,11 +116,14 @@ namespace UGF.Testing.Editor.Editor.TestResources
         {
             m_assetBundleDrawer.Clear();
 
-            string path = TestResourcesEditorSettings.GetAssetBundlePath();
-
-            if (File.Exists(path))
+            if (m_displayAssetBundleInfo)
             {
-                m_assetBundleDrawer.Set(path);
+                string path = TestResourcesEditorSettings.GetAssetBundlePath();
+
+                if (File.Exists(path))
+                {
+                    m_assetBundleDrawer.Set(path);
+                }
             }
         }
     }
