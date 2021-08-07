@@ -4,7 +4,7 @@ UGF.Testing
 
 ## Info
 
-- **Version**: `1.0.0-preview.1`
+- **Version**: `1.0.0-preview.2`
 - **Unity**: `2021.1`
 - **API Compatibility Level**: `.NET Standard 2.0`
 
@@ -12,7 +12,7 @@ UGF.Testing
 
 - `com.unity.test-framework`: `1.1.27`
 - `com.ugf.customsettings`: `3.4.1`
-- `com.ugf.assetbundles`: `1.0.0-preview`
+- `com.ugf.assetbundles`: `1.0.0-preview.1`
 
 
 ### Description
