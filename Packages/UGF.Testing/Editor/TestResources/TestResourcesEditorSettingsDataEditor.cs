@@ -33,8 +33,6 @@ namespace UGF.Testing.Editor.Editor.TestResources
 
             m_listFolders = new TestResourcesEditorSettingsDataFolderListDrawer(serializedObject.FindProperty("m_folders"));
             m_listFolders.Enable();
-
-            UpdateAssetBundleDrawer();
         }
 
         private void OnDisable()
@@ -65,7 +63,12 @@ namespace UGF.Testing.Editor.Editor.TestResources
             {
                 GUILayout.FlexibleSpace();
 
-                m_displayAssetBundleInfo = GUILayout.Toggle(m_displayAssetBundleInfo, "Display AssetBundle Information");
+                if (GUILayout.Toggle(m_displayAssetBundleInfo, "Display AssetBundle Information") != m_displayAssetBundleInfo)
+                {
+                    m_displayAssetBundleInfo = !m_displayAssetBundleInfo;
+
+                    UpdateAssetBundleDrawer();
+                }
 
                 EditorGUILayout.Space();
 
