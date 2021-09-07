@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.0-preview.3](https://github.com/unity-game-framework/ugf-testing/releases/tag/1.0.0-preview.3) - 2021-09-07  
+
+### Release Notes
+
+- [Milestone](https://github.com/unity-game-framework/ugf-testing/milestone/7?closed=1)  
+    
+
+### Changed
+
+- Change TestResourcesEditorUtility.GetAssets to ignore folders during collection ([#16](https://github.com/unity-game-framework/ugf-testing/pull/16))  
+    - Change `TestResourcesEditorUtility.GetAssets()` method to ignore folder assets.
+
 ## [1.0.0-preview.2](https://github.com/unity-game-framework/ugf-testing/releases/tag/1.0.0-preview.2) - 2021-08-07  
 
 ### Release Notes
