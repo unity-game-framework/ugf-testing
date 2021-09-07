@@ -80,19 +80,23 @@ namespace UGF.Testing.Editor.Editor.TestResources
                 foreach (string guid in guids)
                 {
                     string assetPath = AssetDatabase.GUIDToAssetPath(guid);
-                    string addressRoot = Path.GetDirectoryName(folderPath);
 
-                    string addressPath = !string.IsNullOrEmpty(addressRoot)
-                        ? assetPath.Substring(addressRoot.Length + 1, assetPath.Length - addressRoot.Length - 1)
-                        : assetPath;
+                    if (!AssetDatabase.IsValidFolder(assetPath))
+                    {
+                        string addressRoot = Path.GetDirectoryName(folderPath);
 
-                    string addressName = Path.GetFileNameWithoutExtension(addressPath);
-                    string addressDirectory = Path.GetDirectoryName(addressPath);
-                    string address = !string.IsNullOrEmpty(addressDirectory) ? $"{addressDirectory}/{addressName}" : addressName;
+                        string addressPath = !string.IsNullOrEmpty(addressRoot)
+                            ? assetPath.Substring(addressRoot.Length + 1, assetPath.Length - addressRoot.Length - 1)
+                            : assetPath;
 
-                    address = address.Replace('\\', '/');
+                        string addressName = Path.GetFileNameWithoutExtension(addressPath);
+                        string addressDirectory = Path.GetDirectoryName(addressPath);
+                        string address = !string.IsNullOrEmpty(addressDirectory) ? $"{addressDirectory}/{addressName}" : addressName;
 
-                    assets.Add(address, assetPath);
+                        address = address.Replace('\\', '/');
+
+                        assets.Add(address, assetPath);
+                    }
                 }
             }
         }
